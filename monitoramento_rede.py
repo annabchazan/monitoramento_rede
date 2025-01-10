@@ -48,7 +48,7 @@ def monitor_bandwidth():
                     timestamp, 
                     f"{upload_speed:.2f}", 
                     f"{download_speed:.2f}", 
-                    "Sim" if upload_anomaly or download_anomaly else "Nao"
+                    "Sim" if upload_anomaly or download_anomaly else "Naoo"
                 ])
             
             print(f"[REDE] {timestamp} | Upload: {upload_speed:.2f} KB/s | Download: {download_speed:.2f} KB/s | Anormalidade: {'Sim' if upload_anomaly or download_anomaly else 'Nao'}")
