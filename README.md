@@ -68,4 +68,4 @@ packet_data.csv: Contém detalhes sobre pacotes capturados.
 
 Para interromper o monitoramento, clique no botão Parar.
 
-### Desenvolvido por Anna Beatriz Chazan, Cauê Agusto e Rafel Villares
+### Desenvolvido por Anna Beatriz Chazan, Cauê Agusto e Rafael Vilares
