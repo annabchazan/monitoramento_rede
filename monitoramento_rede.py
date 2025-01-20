@@ -88,9 +88,6 @@ def start_monitoring(option, log_box):
         threading.Thread(target=monitor_bandwidth, args=(log_box,), daemon=True).start()
     elif option == "2":
         threading.Thread(target=capture_packets, args=(log_box,), daemon=True).start()
-    elif option == "3":
-        threading.Thread(target=monitor_bandwidth, args=(log_box,), daemon=True).start()
-        threading.Thread(target=capture_packets, args=(log_box,), daemon=True).start()
 
 # Função para parar as threads
 def stop_monitoring(log_box):
@@ -107,7 +104,7 @@ def create_gui():
     main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
     ttk.Label(main_frame, text="Escolha uma opção:").grid(row=0, column=0, sticky=tk.W)
-    options = {"1": "Monitorar Largura de Banda", "2": "Capturar Pacotes", "3": "Ambos"}
+    options = {"1": "Monitorar Largura de Banda", "2": "Capturar Pacotes"}
     option_var = tk.StringVar(value="1")
     for key, value in options.items():
         ttk.Radiobutton(main_frame, text=value, variable=option_var, value=key).grid(sticky=tk.W)
